@@ -62,7 +62,7 @@ function fetchWeatherData() {
         const d = parseInt(date.substr(8, 2));
         const time = date.substr(11);
 
-        dateOutput.innerHTML = `${dayOfTheWeek(d, m, y)} ${d}, ${m}, ${y}`;
+        dateOutput.innerHTML = `${dayOfTheWeek(d, m, y)} ${d}. ${m}. ${y}`;
         timeOutput.innerHTML = time;
 
         nameOutput.innerHTML = data.location.name;
